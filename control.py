@@ -68,14 +68,14 @@ class BaseCompensation:
         获取一次性赔偿信息
         :return:
         """
-        pass
+        return {}
 
     def _get_monthly_result(self):
         """
         获取按月赔偿信息
         :return:
         """
-        pass
+        return {}
 
     def _get_base_formula(self, msg):
         """
@@ -159,6 +159,7 @@ class BaseCompensation:
         :param num:
         :return:
         """
+        print(num)
         return '{:.2f}'.format(num)
 
     def _get_single_result(self, event_name, choice=None):
@@ -179,7 +180,7 @@ class BaseCompensation:
         event_name += '{}'
         # 如果没有对应公式，则返回空
         if not cal_msg:
-            return {}, 0
+            return {}, '0'
 
         cal_result = self._get_cal_result(cal_msg)
         formula_result = self._get_formula_result(cal_msg)
@@ -207,12 +208,12 @@ class DeathCompensation(BaseCompensation):
         """
         m_one_off, m_one_off_num = self._get_single_result('m_one_off')  # 一次性工亡补助金
         m_funeral, m_funeral_num = self._get_single_result('m_funeral')  # 丧葬补助金
-        cal_result = self._output_number(eval(m_one_off_num) + eval(m_funeral_num))
+        cal_result = eval(m_one_off_num) + eval(m_funeral_num)
         one_off_result = {
             'm_one_off': m_one_off,
             'm_funeral': m_funeral,
             'total': {
-                'cal_result': cal_result,
+                'cal_result': self._output_number(cal_result),
                 'formula_result': '{}+{} = {}'.format(m_one_off_num, m_funeral_num, cal_result)
             }
         }
@@ -226,12 +227,12 @@ class DeathCompensation(BaseCompensation):
         """
         m_spouse, m_spouse_num = self._get_single_result('m_spouse')
         m_other, m_other_num = self._get_single_result('m_other')
-        cal_result = self._output_number(eval(m_spouse_num) + eval(m_other_num))
+        cal_result = eval(m_spouse_num) + eval(m_other_num)
         monthly_result = {
             'm_spouse': m_spouse,
             'm_other': m_other,
             'total': {
-                'cal_result': cal_result,
+                'cal_result': self._output_number(cal_result),
                 'formula_result': '{}+{} = {}'.format(m_spouse_num, m_other_num, cal_result)
             }
         }
@@ -256,6 +257,57 @@ class HurtBaseCompensation(BaseCompensation):
         key_name = 'level_{}'.format(disability_grade)
         self.base_data = constant.WorkCompensationConstant.base_data.get(self.province, {}).get(key_name)  # 省份对应类型的基础信息
 
+    def _get_one2ten_common_result(self):
+        """
+        获取1--10级共有的补偿数据
+        :return:
+        """
+        m_shut_down, m_shut_down_num = self._get_single_result('m_shut_down', self.is_keep_salary)  # 停工留薪期工资
+        m_self_care, m_self_care_num = self._get_single_result('m_self_care', self.self_care)  # 护理费
+        m_one_off_disability, m_one_off_disability_num = self._get_single_result('m_one_off_disability')  # 一次性伤残补助金
+
+        # 不计算停工留薪 and 完全可以自理，在结果中不显示“停工留薪期工资”和“护理费”
+        cal_result = eval(m_one_off_disability_num)
+        formula_result = m_one_off_disability_num
+        if m_shut_down_num:
+            cal_result += eval(m_shut_down_num)
+            formula_result += m_shut_down_num
+        if m_self_care_num:
+            cal_result += eval(m_self_care_num)
+            formula_result += '+' + m_self_care_num
+
+        return m_shut_down, m_self_care, m_one_off_disability, formula_result, cal_result
+
+    def _get_five2ten_one_off_result(self):
+        """
+        获取5--10级的一次性赔偿
+        :return:
+        """
+        # 停工留薪期工资、护理费、一次性伤残补助金
+        m_shut_down, m_self_care, m_one_off_disability, formula_result, cal_result = self._get_one2ten_common_result()
+
+        m_one_off_job, m_one_off_job_num = self._get_single_result('m_one_off_job')  # 一次性伤残就业补助金
+        m_one_off_medical, m_one_off_medical_num = self._get_single_result('m_one_off_medical')  # 一次性工伤医疗补助金
+
+        cal_result += eval(m_one_off_job_num)
+        cal_result += eval(m_one_off_medical_num)
+        formula_result += '+' + m_one_off_job_num
+        formula_result += '+' + m_one_off_medical_num
+
+        one_off_result = {
+            'm_one_off_disability': m_one_off_disability,
+            'm_one_off_job': m_one_off_job,
+            'm_one_off_medical': m_one_off_medical,
+            'm_shut_down': m_shut_down,
+            'm_self_care': m_self_care,
+            'total': {
+                'cal_result': self._output_number(cal_result),
+                'formula_result': '{} = {}'.format(formula_result, cal_result)
+            }
+        }
+
+        return one_off_result
+
 
 class One2FourCompensation(HurtBaseCompensation):
     """
@@ -267,28 +319,15 @@ class One2FourCompensation(HurtBaseCompensation):
         获取一次性赔偿
         :return:
         """
-        m_one_off_disability, m_one_off_disability_num = self._get_single_result('m_one_off_disability')  # 一次性伤残补助金
-        m_shut_down, m_shut_down_num = self._get_single_result('m_shut_down', self.is_keep_salary)  # 停工留薪期工资
-        m_self_care, m_self_care_num = self._get_single_result('m_self_care', self.self_care)  # 护理费
-
-        # 不计算停工留薪 and 完全可以自理，在结果中不显示“停工留薪期工资”和“护理费”
-        cal_result = eval(m_one_off_disability_num)
-        formula_result = m_one_off_disability_num
-        if m_shut_down_num:
-            cal_result += eval(m_shut_down_num)
-            formula_result += '+' + m_shut_down_num
-        if m_self_care_num:
-            cal_result += eval(m_self_care_num)
-            formula_result += '+' + m_self_care_num
-
-        cal_result = self._output_number(cal_result)
+        # 停工留薪期工资、护理费、一次性伤残补助金
+        m_shut_down, m_self_care, m_one_off_disability, formula_result, cal_result = self._get_one2ten_common_result()
 
         one_off_result = {
             'm_one_off_disability': m_one_off_disability,
             'm_shut_down': m_shut_down,
             'm_self_care': m_self_care,
             'total': {
-                'cal_result': cal_result,
+                'cal_result': self._output_number(cal_result),
                 'formula_result': '{} = {}'.format(formula_result, cal_result)
             }
         }
@@ -300,17 +339,122 @@ class One2FourCompensation(HurtBaseCompensation):
         获取按月赔偿
         :return:
         """
-        m_disability, m_disability_num = self._get_single_result('m_disability')
-        cal_result = self._output_number(eval(m_disability_num))
+        m_disability, m_disability_num = self._get_single_result('m_disability')  # 伤残津贴
+        cal_result = eval(m_disability_num)
         monthly_result = {
             'm_disability': m_disability,
             'total': {
-                'cal_result': cal_result,
+                'cal_result': self._output_number(cal_result),
                 'formula_result': '{} = {}'.format(m_disability_num, cal_result)
             }
         }
 
         return monthly_result
+
+
+class Five2SixCompensation(HurtBaseCompensation):
+    """
+    5--6级工伤赔偿计算
+    """
+
+    def __init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary, shut_down_days,
+                 disability_begin_date, authenticate_date, per_age, my_age):
+        HurtBaseCompensation.__init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary,
+                                      shut_down_days, disability_begin_date, authenticate_date)
+        self.per_age = per_age
+        self.my_age = my_age
+
+    def _get_one_off_result(self):
+        """
+        获取一次性赔偿
+        :return:
+        """
+        return self._get_five2ten_one_off_result()
+        # # 停工留薪期工资、护理费、一次性伤残补助金
+        # m_shut_down, m_self_care, m_one_off_disability, formula_result, cal_result = self._get_one2ten_common_result()
+        #
+        # m_one_off_job, m_one_off_job_num = self._get_single_result('m_one_off_job')  # 一次性伤残就业补助金
+        # m_one_off_medical, m_one_off_medical_num = self._get_single_result('m_one_off_medical')  # 一次性工伤医疗补助金
+        #
+        # cal_result += eval(m_one_off_job_num)
+        # cal_result += eval(m_one_off_medical_num)
+        # formula_result += '+' + m_one_off_job
+        # formula_result += '+' + m_one_off_medical
+        #
+        # one_off_result = {
+        #     'm_one_off_disability': m_one_off_disability,
+        #     'm_one_off_job': m_one_off_job,
+        #     'm_one_off_medical': m_one_off_medical,
+        #     'm_shut_down': m_shut_down,
+        #     'm_self_care': m_self_care,
+        #     'total': {
+        #         'cal_result': self._output_number(cal_result),
+        #         'formula_result': '{} = {}'.format(formula_result, cal_result)
+        #     }
+        # }
+        #
+        # return one_off_result
+
+    def _get_monthly_result(self):
+        """
+        获取按月赔偿
+        :return:
+        """
+        m_disability, m_disability_num = self._get_single_result('m_disability')  # 伤残津贴
+        cal_result = eval(m_disability_num)
+        monthly_result = {
+            'm_disability': m_disability,
+            'total': {
+                'cal_result': self._output_number(cal_result),
+                'formula_result': '{} = {}'.format(m_disability_num, cal_result)
+            }
+        }
+
+        return monthly_result
+
+
+class Seven2TenCompensation(HurtBaseCompensation):
+    """
+    7--10级工伤赔偿计算
+    """
+
+    def __init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary, shut_down_days,
+                 disability_begin_date, authenticate_date, per_age, my_age):
+        HurtBaseCompensation.__init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary,
+                                      shut_down_days, disability_begin_date, authenticate_date)
+        self.per_age = per_age
+        self.my_age = my_age
+
+    def _get_one_off_result(self):
+        """
+        获取一次性赔偿
+        :return:
+        """
+        return self._get_five2ten_one_off_result()
+        # # 停工留薪期工资、护理费、一次性伤残补助金
+        # m_shut_down, m_self_care, m_one_off_disability, formula_result, cal_result = self._get_one2ten_common_result()
+        #
+        # m_one_off_job, m_one_off_job_num = self._get_single_result('m_one_off_job')  # 一次性伤残就业补助金
+        # m_one_off_medical, m_one_off_medical_num = self._get_single_result('m_one_off_medical')  # 一次性工伤医疗补助金
+        #
+        # cal_result += eval(m_one_off_job_num)
+        # cal_result += eval(m_one_off_medical_num)
+        # formula_result += m_one_off_job
+        # formula_result += m_one_off_medical
+        #
+        # one_off_result = {
+        #     'm_one_off_disability': m_one_off_disability,
+        #     'm_one_off_job': m_one_off_job,
+        #     'm_one_off_medical': m_one_off_medical,
+        #     'm_shut_down': m_shut_down,
+        #     'm_self_care': m_self_care,
+        #     'total': {
+        #         'cal_result': self._output_number(cal_result),
+        #         'formula_result': '{} = {}'.format(formula_result, cal_result)
+        #     }
+        # }
+        #
+        # return one_off_result
 
 
 def str2date(str_date):
