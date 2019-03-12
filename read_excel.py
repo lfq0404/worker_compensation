@@ -58,13 +58,13 @@ for sheet_name in ['华东地区', '华南地区', '华中地区', '华北地区
                     for level_temp in [level_1, level_2, level_3, level_4, level_5, level_6, level_7, level_8, level_9,
                                        level_10]:
                         level_temp['m_shut_down'] = {
-                            1: m_shut_down_1,
+                            1: m_shut_down_1+'/21.75',
                         }
                 elif row_values[2] == '没有停工留薪期':
                     m_shut_down_0 = row_values[3]
                     for level_temp in [level_1, level_2, level_3, level_4, level_5, level_6, level_7, level_8, level_9,
                                        level_10]:
-                        level_temp['m_shut_down'][0] = m_shut_down_0
+                        level_temp['m_shut_down'][0] = m_shut_down_0+'/21.75'
             elif '出院后的护理费' in m_type:
                 if row_values[2] == '完全不能自理':
                     not_care = row_values[3]

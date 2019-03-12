@@ -9,7 +9,8 @@ class FactoryCallInterface:
     工亡、1-4级、5-6级、7-10级
     """
 
-    def create(self, disability_grade):
+    @classmethod
+    def create(cls, disability_grade, **kwargs):
         """
         初始化对应的实例
         :param disability_grade: 0工亡, 1--10与之对应伤残等级
@@ -17,7 +18,15 @@ class FactoryCallInterface:
         """
         disability_grade = int(disability_grade)
         if disability_grade == 0:
-            return
+            return DeathCompensation(**kwargs)
+        elif disability_grade in (1, 2, 3, 4):
+            return One2FourCompensation(disability_grade, **kwargs)
+        elif disability_grade in (5, 6):
+            return Five2SixCompensation(disability_grade, **kwargs)
+        elif disability_grade in (7, 8, 9, 10):
+            return Seven2TenCompensation(disability_grade, **kwargs)
+        else:
+            raise '参数错误'
 
 
 class BaseCompensation:
@@ -88,9 +97,25 @@ class BaseCompensation:
         """
         msg = self._get_base_formula(msg)
         cal_result = self._output_number(eval(msg))  # '24000.00'
-        msg = self._replace_sign_of_operation(msg)  # '3×8000'
-        msg += ' = ' + cal_result
 
+        # 如果存在max的情况
+        if re.search('max', msg):
+            # "max(6000*0.2, 3000)"：6000*0.2 < 3000 = 3000
+            # "max(6000*0.9, 3000)"：6000*0.9 = 5400
+            if re.search('^max', msg):
+                num1, num2 = re.findall('^max\((.*?),(.*?)\)', msg)[0]  # [('6000*0.9', ' 3000')]
+                if eval(num1) < eval(num2):
+                    msg = '{}<{} = {}'.format(num1, num2, cal_result)
+                else:
+                    msg = '{} = {}'.format(num1, cal_result)
+            # "500*max((75-60)*0.7, 15)"，类似于这种的经与产品确定，不返回公式
+            else:
+                pass
+        # 正常的加减乘除
+        else:
+            msg += ' = ' + cal_result  # '3×8000 = 24000.00'
+
+        msg = self._replace_sign_of_operation(msg)
         return msg
 
     def _get_cal_result(self, msg):
@@ -120,17 +145,26 @@ class BaseCompensation:
         """
         return '{:.2f}'.format(num)
 
-    def _get_single_result(self, event_name):
+    def _get_single_result(self, event_name, choice=None):
         """
         获取每个单项的返回值
         :param event_name: 'm_one_off'
+        :param choice: 二级key
         :return: {
             'm_one_off_cal_result': '24000.00',
             'm_one_off_formula_result': '3×8000 = 24000.00'
         }, '24000.00'
         """
         event_name += '{}'
-        cal_msg = self.base_data.get(event_name)
+        if choice:
+            cal_msg = self.base_data.get(event_name).get(str(choice))
+        else:
+            cal_msg = self.base_data.get(event_name)
+
+        # 如果没有对应公式，则返回空
+        if not cal_msg:
+            return {}, 0
+
         cal_result = self._get_cal_result(cal_msg)
         formula_result = self._get_formula_result(cal_msg)
         single_result = {
@@ -155,8 +189,8 @@ class DeathCompensation(BaseCompensation):
         获取一次性赔偿
         :return:
         """
-        m_one_off, m_one_off_num = self._get_single_result('m_one_off')
-        m_funeral, m_funeral_num = self._get_single_result('m_funeral')
+        m_one_off, m_one_off_num = self._get_single_result('m_one_off')  # 一次性工亡补助金
+        m_funeral, m_funeral_num = self._get_single_result('m_funeral')  # 丧葬补助金
         cal_result = self._output_number(eval(m_one_off_num) + eval(m_funeral_num))
         one_off_result = {
             'm_one_off': m_one_off,
@@ -177,7 +211,7 @@ class DeathCompensation(BaseCompensation):
         m_spouse, m_spouse_num = self._get_single_result('m_spouse')
         m_other, m_other_num = self._get_single_result('m_other')
         cal_result = self._output_number(eval(m_spouse_num) + eval(m_other_num))
-        one_off_result = {
+        monthly_result = {
             'm_spouse': m_spouse,
             'm_other': m_other,
             'total': {
@@ -186,4 +220,78 @@ class DeathCompensation(BaseCompensation):
             }
         }
 
+        return monthly_result
+
+
+class HurtBaseCompensation(BaseCompensation):
+    """
+    1--10级的基类，主要方便初始化工作
+    """
+
+    def __init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary, shut_down_days,
+                 disability_begin_date, authenticate_date):
+        BaseCompensation.__init__(province, city, my_salary)
+        self.disability_grade = int(disability_grade)  # 伤残等级
+        self.self_care = int(self_care)  # 出院自理能力：1完全不能自理，2大部分不能自理，3部分不能自理，4全部可以自理
+        self.is_keep_salary = int(is_keep_salary)  # 是否停工留薪
+        self.shut_down_days = shut_down_days  # 停工留薪期，最多365
+        self.disability_begin_date = disability_begin_date  # 工伤发生日
+        self.authenticate_date = authenticate_date  # 伤残鉴定日
+        key_name = 'level_{}'.format(disability_grade)
+        self.base_data = constant.WorkCompensationConstant.base_data.get(self.province, {}).get(key_name)  # 省份对应类型的基础信息
+
+
+class One2FourCompensation(HurtBaseCompensation):
+    """
+    1--4级工伤赔偿计算
+    """
+
+    def _get_one_off_result(self):
+        """
+        获取一次性赔偿
+        :return:
+        """
+        m_one_off_disability, m_one_off_disability_num = self._get_single_result('m_one_off_disability')  # 一次性伤残补助金
+        m_shut_down, m_shut_down_num = self._get_single_result('m_shut_down', self.is_keep_salary)  # 停工留薪期工资
+        m_self_care, m_self_care_num = self._get_single_result('m_self_care', self.self_care)  # 护理费
+
+        # 不计算停工留薪 and 完全可以自理，在结果中不显示“停工留薪期工资”和“护理费”
+        cal_result = eval(m_one_off_disability_num)
+        formula_result = m_one_off_disability_num
+        if m_shut_down_num:
+            cal_result += eval(m_shut_down_num)
+            formula_result += '+' + m_shut_down_num
+        if m_self_care_num:
+            cal_result += eval(m_self_care_num)
+            formula_result += '+' + m_self_care_num
+
+        cal_result = self._output_number(cal_result)
+
+        one_off_result = {
+            'm_one_off_disability': m_one_off_disability,
+            'm_shut_down': m_shut_down,
+            'm_self_care': m_self_care,
+            'total': {
+                'cal_result': cal_result,
+                'formula_result': '{} = {}'.format(formula_result, cal_result)
+            }
+        }
+
         return one_off_result
+
+    def _get_monthly_result(self):
+        """
+        获取按月赔偿
+        :return:
+        """
+        m_disability, m_disability_num = self._get_single_result('m_disability')
+        cal_result = self._output_number(eval(m_disability_num))
+        monthly_result = {
+            'm_disability': m_disability,
+            'total': {
+                'cal_result': cal_result,
+                'formula_result': '{} = {}'.format(m_disability_num, cal_result)
+            }
+        }
+
+        return monthly_result
