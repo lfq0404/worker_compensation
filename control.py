@@ -1,4 +1,5 @@
 import re
+import datetime
 
 import constant
 
@@ -82,8 +83,16 @@ class BaseCompensation:
         :param msg: '{shut_down_days}*{my_salary}'
         :return: '3*8000'
         """
+        # 对日期单独处理
+        if '({authenticate_date}-{disability_begin_date})' in msg:
+            sub_days = (self.authenticate_date - self.disability_begin_date).days
+            msg = msg.replace('({authenticate_date}-{disability_begin_date})', str(sub_days))
+
         paras_key = re.findall('\{(.*?)\}', msg)  # ['shut_down_days', 'my_salary']
-        paras_value = list(map(lambda x: eval('self.' + x), paras_key))  # [self.shut_down_days, self.my_salary]
+        paras_value = []  # [self.shut_down_days, self.my_salary]
+        for i in paras_key:
+            paras_value.append(eval('self.{}'.format(i)))
+        # paras_value = list(map(lambda x: eval('self.{}'.format(x)), paras_key))  # 不知道为什么这样写不行
         paras = dict(zip(paras_key, paras_value))  # {'shut_down_days': self.shut_down_days, ...}
         msg = msg.format(**paras)  # '3*8000'
 
@@ -96,7 +105,12 @@ class BaseCompensation:
         :return:  '3×8000 = 24000.00'
         """
         msg = self._get_base_formula(msg)
-        cal_result = self._output_number(eval(msg))  # '24000.00'
+
+        # 计算时去掉百分号
+        if '%' in msg:
+            cal_result = self._output_number(eval(msg.replace('%', '/100')))
+        else:
+            cal_result = self._output_number(eval(msg))  # '24000.00'
 
         # 如果存在max的情况
         if re.search('max', msg):
@@ -104,7 +118,7 @@ class BaseCompensation:
             # "max(6000*0.9, 3000)"：6000*0.9 = 5400
             if re.search('^max', msg):
                 num1, num2 = re.findall('^max\((.*?),(.*?)\)', msg)[0]  # [('6000*0.9', ' 3000')]
-                if eval(num1) < eval(num2):
+                if eval(num1.replace('%', '/100')) < eval(num2.replace('%', '/100')):
                     msg = '{}<{} = {}'.format(num1, num2, cal_result)
                 else:
                     msg = '{} = {}'.format(num1, cal_result)
@@ -125,6 +139,8 @@ class BaseCompensation:
         :return: '24000.00'
         """
         msg = self._get_base_formula(msg)
+        if '%' in msg:
+            msg = msg.replace('%', '/100')
         cal_result = self._output_number(eval(msg))
 
         return cal_result
@@ -155,12 +171,12 @@ class BaseCompensation:
             'm_one_off_formula_result': '3×8000 = 24000.00'
         }, '24000.00'
         """
-        event_name += '{}'
         if choice:
-            cal_msg = self.base_data.get(event_name).get(str(choice))
+            cal_msg = self.base_data.get(event_name).get(choice)
         else:
             cal_msg = self.base_data.get(event_name)
 
+        event_name += '{}'
         # 如果没有对应公式，则返回空
         if not cal_msg:
             return {}, 0
@@ -181,7 +197,7 @@ class DeathCompensation(BaseCompensation):
     """
 
     def __init__(self, province, city, my_salary):
-        BaseCompensation.__init__(province, city, my_salary)
+        BaseCompensation.__init__(self, province, city, my_salary)
         self.base_data = constant.WorkCompensationConstant.base_data.get(self.province, {}).get('death')  # 省份对应类型的基础信息
 
     def _get_one_off_result(self):
@@ -230,13 +246,13 @@ class HurtBaseCompensation(BaseCompensation):
 
     def __init__(self, disability_grade, province, city, my_salary, self_care, is_keep_salary, shut_down_days,
                  disability_begin_date, authenticate_date):
-        BaseCompensation.__init__(province, city, my_salary)
+        BaseCompensation.__init__(self, province, city, my_salary)
         self.disability_grade = int(disability_grade)  # 伤残等级
-        self.self_care = int(self_care)  # 出院自理能力：1完全不能自理，2大部分不能自理，3部分不能自理，4全部可以自理
-        self.is_keep_salary = int(is_keep_salary)  # 是否停工留薪
+        self.self_care = str(self_care)  # 出院自理能力：1完全不能自理，2大部分不能自理，3部分不能自理，4全部可以自理
+        self.is_keep_salary = str(is_keep_salary)  # 是否停工留薪
         self.shut_down_days = shut_down_days  # 停工留薪期，最多365
-        self.disability_begin_date = disability_begin_date  # 工伤发生日
-        self.authenticate_date = authenticate_date  # 伤残鉴定日
+        self.disability_begin_date = str2date(disability_begin_date)  # 工伤发生日
+        self.authenticate_date = str2date(authenticate_date)  # 伤残鉴定日
         key_name = 'level_{}'.format(disability_grade)
         self.base_data = constant.WorkCompensationConstant.base_data.get(self.province, {}).get(key_name)  # 省份对应类型的基础信息
 
@@ -295,3 +311,14 @@ class One2FourCompensation(HurtBaseCompensation):
         }
 
         return monthly_result
+
+
+def str2date(str_date):
+    """
+    str格式要求：年月日[时[分[秒]]]，以非数字分割
+    eg：2018-08-08、2018-08-08 08:12:12、2018-08-08 23等
+    返回格式：年:月:日 [时-[分-[秒]]]
+    """
+    str_date = re.split('[^\d]+', str_date.strip())
+    int_date = [i for i in map(lambda s: int(s), str_date)]
+    return datetime.datetime(*int_date[:6])

@@ -174,7 +174,7 @@ with open('result.txt', 'w') as f:
         .replace('上年度全国城镇居民人均可支配收入', '{country_per_income}') \
         .replace('统筹地区（市）上年度职工月平均工资', '{city_per_salary}*') \
         .replace('停工留薪期', '{shut_down_days}') \
-        .replace('伤残鉴定之日－工伤发生之日', '{disability_begin_date}-{authenticate_date}') \
+        .replace('伤残鉴定之日－工伤发生之日', '{authenticate_date}-{disability_begin_date}') \
         .replace('倍', '') \
         .replace('上年度全市职工月平均工资', '{city_per_salary}') \
         .replace('个月', '') \

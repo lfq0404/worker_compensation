@@ -10,7 +10,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -23,7 +23,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -36,7 +36,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -49,7 +49,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -62,7 +62,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -77,7 +77,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -92,7 +92,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -106,7 +106,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -120,7 +120,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -134,7 +134,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -156,7 +156,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -169,7 +169,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -182,7 +182,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -195,7 +195,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -208,7 +208,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -223,7 +223,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -238,7 +238,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -252,7 +252,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -266,7 +266,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -281,7 +281,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "15000.0",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -302,7 +302,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -315,7 +315,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -328,7 +328,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -341,7 +341,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -354,7 +354,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -369,7 +369,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -384,7 +384,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -398,7 +398,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -412,7 +412,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -427,7 +427,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{province_per_salary}*2",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -448,7 +448,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -461,7 +461,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -474,7 +474,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -487,7 +487,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -500,7 +500,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -515,7 +515,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -530,7 +530,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -544,7 +544,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -558,7 +558,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -573,7 +573,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*5",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -594,7 +594,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -607,7 +607,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -620,7 +620,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -633,7 +633,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -646,7 +646,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -661,7 +661,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -676,7 +676,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -690,7 +690,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -704,7 +704,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -719,7 +719,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*max(({per_age}-{my_age})*0.1, 3)",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -740,7 +740,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -753,7 +753,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -766,7 +766,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -779,7 +779,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -792,7 +792,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -807,7 +807,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -822,7 +822,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -836,7 +836,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -850,7 +850,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -865,7 +865,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*8",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -886,7 +886,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -899,7 +899,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -912,7 +912,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -925,7 +925,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -938,7 +938,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -953,7 +953,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -968,7 +968,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -982,7 +982,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -996,7 +996,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1010,7 +1010,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1032,7 +1032,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1045,7 +1045,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1058,7 +1058,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1071,7 +1071,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1084,7 +1084,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1099,7 +1099,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1114,7 +1114,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1128,7 +1128,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1142,7 +1142,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1157,7 +1157,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*7",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1178,7 +1178,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1191,7 +1191,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1204,7 +1204,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1217,7 +1217,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1230,7 +1230,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1245,7 +1245,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1260,7 +1260,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1274,7 +1274,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1288,7 +1288,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1303,7 +1303,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*9",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1324,7 +1324,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1337,7 +1337,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1350,7 +1350,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1363,7 +1363,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1376,7 +1376,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1391,7 +1391,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1406,7 +1406,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1420,7 +1420,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1434,7 +1434,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1448,7 +1448,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1470,7 +1470,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1483,7 +1483,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1496,7 +1496,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1509,7 +1509,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1522,7 +1522,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1537,7 +1537,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1552,7 +1552,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1566,7 +1566,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1580,7 +1580,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1595,7 +1595,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*8",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1616,7 +1616,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1629,7 +1629,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1642,7 +1642,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1655,7 +1655,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1668,7 +1668,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1683,7 +1683,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1698,7 +1698,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1712,7 +1712,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1726,7 +1726,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1741,7 +1741,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*6",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1762,7 +1762,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1775,7 +1775,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1788,7 +1788,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1801,7 +1801,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1814,7 +1814,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1829,7 +1829,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1844,7 +1844,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1858,7 +1858,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1872,7 +1872,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1887,7 +1887,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*13",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1908,7 +1908,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1921,7 +1921,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1934,7 +1934,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1947,7 +1947,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1960,7 +1960,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1975,7 +1975,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -1990,7 +1990,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2004,7 +2004,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2018,7 +2018,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2032,7 +2032,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2054,7 +2054,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2067,7 +2067,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2080,7 +2080,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2093,7 +2093,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2106,7 +2106,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2121,7 +2121,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2136,7 +2136,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2150,7 +2150,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2164,7 +2164,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2179,7 +2179,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*3",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2200,7 +2200,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2213,7 +2213,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2226,7 +2226,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2239,7 +2239,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2252,7 +2252,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2267,7 +2267,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2282,7 +2282,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2296,7 +2296,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2310,7 +2310,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2325,7 +2325,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{province_per_salary}*4",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2346,7 +2346,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2359,7 +2359,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2372,7 +2372,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2385,7 +2385,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2398,7 +2398,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2413,7 +2413,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2428,7 +2428,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2442,7 +2442,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2456,7 +2456,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2471,7 +2471,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*6",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2492,7 +2492,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2505,7 +2505,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2518,7 +2518,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2531,7 +2531,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2544,7 +2544,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2559,7 +2559,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2574,7 +2574,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2588,7 +2588,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2602,7 +2602,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2617,7 +2617,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*7",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2638,7 +2638,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2651,7 +2651,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2664,7 +2664,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2677,7 +2677,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2690,7 +2690,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2705,7 +2705,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2720,7 +2720,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2734,7 +2734,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2748,7 +2748,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2762,7 +2762,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2784,7 +2784,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2797,7 +2797,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2810,7 +2810,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2823,7 +2823,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2836,7 +2836,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2851,7 +2851,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2866,7 +2866,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2880,7 +2880,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2894,7 +2894,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2909,7 +2909,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*7",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2930,7 +2930,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2943,7 +2943,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2956,7 +2956,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2969,7 +2969,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2982,7 +2982,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -2997,7 +2997,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3012,7 +3012,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3026,7 +3026,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3040,7 +3040,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3055,7 +3055,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*7.5",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3076,7 +3076,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3089,7 +3089,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3102,7 +3102,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3115,7 +3115,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3128,7 +3128,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3143,7 +3143,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3158,7 +3158,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3172,7 +3172,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3186,7 +3186,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3201,7 +3201,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*12",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3222,7 +3222,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3235,7 +3235,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3248,7 +3248,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3261,7 +3261,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3274,7 +3274,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3289,7 +3289,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3304,7 +3304,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3318,7 +3318,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3332,7 +3332,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3347,7 +3347,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*6",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3368,7 +3368,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3381,7 +3381,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3394,7 +3394,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3407,7 +3407,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3420,7 +3420,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3435,7 +3435,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3450,7 +3450,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3464,7 +3464,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3478,7 +3478,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3492,7 +3492,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3514,7 +3514,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3527,7 +3527,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3540,7 +3540,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3553,7 +3553,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3566,7 +3566,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3579,7 +3579,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3592,7 +3592,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3606,7 +3606,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3620,7 +3620,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3635,7 +3635,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*6",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3656,7 +3656,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3669,7 +3669,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3682,7 +3682,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3695,7 +3695,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3708,7 +3708,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3723,7 +3723,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3738,7 +3738,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3752,7 +3752,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3766,7 +3766,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3781,7 +3781,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*3",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3802,7 +3802,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3815,7 +3815,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3828,7 +3828,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3841,7 +3841,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3854,7 +3854,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3869,7 +3869,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3884,7 +3884,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3898,7 +3898,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3912,7 +3912,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3927,7 +3927,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*7",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3948,7 +3948,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3961,7 +3961,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3974,7 +3974,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -3987,7 +3987,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4000,7 +4000,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4015,7 +4015,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4030,7 +4030,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4044,7 +4044,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4058,7 +4058,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4073,7 +4073,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{city_per_salary}*7",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4094,7 +4094,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4107,7 +4107,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4120,7 +4120,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4133,7 +4133,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4146,7 +4146,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4161,7 +4161,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4176,7 +4176,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4190,7 +4190,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4204,7 +4204,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4218,7 +4218,7 @@ class WorkCompensationConstant:
             "level_10": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4240,7 +4240,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4253,7 +4253,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4266,7 +4266,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4279,7 +4279,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4292,7 +4292,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4307,7 +4307,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4322,7 +4322,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4336,7 +4336,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4350,7 +4350,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4365,7 +4365,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*5",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4386,7 +4386,7 @@ class WorkCompensationConstant:
             "level_1": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4399,7 +4399,7 @@ class WorkCompensationConstant:
             "level_2": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4412,7 +4412,7 @@ class WorkCompensationConstant:
             "level_3": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4425,7 +4425,7 @@ class WorkCompensationConstant:
             "level_4": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4438,7 +4438,7 @@ class WorkCompensationConstant:
             "level_5": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4453,7 +4453,7 @@ class WorkCompensationConstant:
             "level_6": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4468,7 +4468,7 @@ class WorkCompensationConstant:
             "level_7": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4482,7 +4482,7 @@ class WorkCompensationConstant:
             "level_8": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4496,7 +4496,7 @@ class WorkCompensationConstant:
             "level_9": {
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
@@ -4511,7 +4511,7 @@ class WorkCompensationConstant:
                 "m_one_off_job": "{my_salary}*6",
                 "m_shut_down": {
                     "1": "{shut_down_days}*{my_salary}/21.75",
-                    "0": "({disability_begin_date}-{authenticate_date})*{my_salary}/21.75"
+                    "0": "({authenticate_date}-{disability_begin_date})*{my_salary}/21.75"
                 },
                 "m_self_care": {
                     "1": "{city_per_salary}*50%",
