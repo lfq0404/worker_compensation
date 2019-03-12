@@ -170,27 +170,29 @@ result[province_name]['level_10'] = level_10
 with open('result.txt', 'w') as f:
     result_str = json.dumps(result).encode('utf-8').decode('unicode_escape')
     result_str = result_str \
-        .replace('本人工资', 'my_salary') \
-        .replace('上年度全国城镇居民人均可支配收入', 'country_per_income') \
-        .replace('统筹地区（市）上年度职工月平均工资', 'city_per_salary*') \
-        .replace('停工留薪期', 'shut_down_days') \
-        .replace('伤残鉴定之日－工伤发生之日', 'disability_begin_date-authenticate_date') \
+        .replace('本人工资', '{my_salary}') \
+        .replace('上年度全国城镇居民人均可支配收入', '{country_per_income}') \
+        .replace('统筹地区（市）上年度职工月平均工资', '{city_per_salary}*') \
+        .replace('停工留薪期', '{shut_down_days}') \
+        .replace('伤残鉴定之日－工伤发生之日', '{disability_begin_date}-{authenticate_date}') \
         .replace('倍', '') \
-        .replace('上年度全市职工月平均工资', 'city_per_salary') \
+        .replace('上年度全市职工月平均工资', '{city_per_salary}') \
         .replace('个月', '') \
-        .replace('月工资', 'my_salary') \
-        .replace('统筹地区上年度职工月平均工资', 'city_per_salary') \
-        .replace('本市上年度职工月平均工资', 'city_per_salary') \
-        .replace('本省上年度在岗职工月平均工资', 'province_per_salary') \
-        .replace('上年度全省在岗职工月平均工资', 'province_per_salary') \
-        .replace('本省上一年度职工月平均工资', 'province_per_salary') \
-        .replace('统筹地区最后一次公布的人口平均预期寿命－年龄', 'per_age-my_age') \
+        .replace('月工资', '{my_salary}') \
+        .replace('统筹地区上年度职工月平均工资', '{city_per_salary}') \
+        .replace('本市上年度职工月平均工资', '{city_per_salary}') \
+        .replace('本省上年度在岗职工月平均工资', '{province_per_salary}') \
+        .replace('上年度全省在岗职工月平均工资', '{province_per_salary}') \
+        .replace('本省上一年度职工月平均工资', '{province_per_salary}') \
+        .replace('统筹地区最后一次公布的人口平均预期寿命－年龄', '{per_age}-{my_age}') \
         .replace('，按月给', '') \
         .replace('。', '') \
         .replace('**', '*')
-    result_str = re.sub(': \"([a-z_0-9%\*]*?)，按月支付，不足最低工资按最低工资算\"',
-                        lambda x: ': "max({}, min_salary)"'.format(x.group(1)),
+    result_str = re.sub(': \"([a-z_0-9%\{\}\*]*?)，按月支付，不足最低工资按最低工资算\"',
+                        lambda x: ': "max({}, {{min_salary}})"'.format(x.group(1)),
                         result_str)
     result_str = re.sub(': "([0-9\.]*?)万"', lambda x: ': "{}"'.format(float(x.group(1)) * 10000), result_str)
+    result_str = re.sub('(\(\{per_age\}-\{my_age\}\)\*.*?)\(不满一年按一年计算\)【低于(.*?)的.*?】',
+                        lambda x: 'max({}, {})'.format(x.group(1), x.group(2)), result_str)
 
     f.write(result_str)
