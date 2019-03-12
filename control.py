@@ -1,5 +1,7 @@
 import re
 
+import constant
+
 
 class FactoryCallInterface:
     """
@@ -82,10 +84,12 @@ class BaseCompensation:
         """
         解析出计算规则
         :param msg: '{shut_down_days}*{my_salary}'
-        :return:  '3×8000'
+        :return:  '3×8000 = 24000.00'
         """
         msg = self._get_base_formula(msg)
+        cal_result = self._output_number(eval(msg))  # '24000.00'
         msg = self._replace_sign_of_operation(msg)  # '3×8000'
+        msg += ' = ' + cal_result
 
         return msg
 
@@ -115,3 +119,71 @@ class BaseCompensation:
         :return:
         """
         return '{:.2f}'.format(num)
+
+    def _get_single_result(self, event_name):
+        """
+        获取每个单项的返回值
+        :param event_name: 'm_one_off'
+        :return: {
+            'm_one_off_cal_result': '24000.00',
+            'm_one_off_formula_result': '3×8000 = 24000.00'
+        }, '24000.00'
+        """
+        event_name += '{}'
+        cal_msg = self.base_data.get(event_name)
+        cal_result = self._get_cal_result(cal_msg)
+        formula_result = self._get_formula_result(cal_msg)
+        single_result = {
+            event_name.format('_cal_result'): cal_result,
+            event_name.format('_formula_result'): formula_result,
+        }
+
+        return single_result, cal_result
+
+
+class DeathCompensation(BaseCompensation):
+    """
+    工亡赔偿计算
+    """
+
+    def __init__(self, province, city, my_salary):
+        BaseCompensation.__init__(province, city, my_salary)
+        self.base_data = constant.WorkCompensationConstant.base_data.get(self.province, {}).get('death')  # 省份对应类型的基础信息
+
+    def _get_one_off_result(self):
+        """
+        获取一次性赔偿
+        :return:
+        """
+        m_one_off, m_one_off_num = self._get_single_result('m_one_off')
+        m_funeral, m_funeral_num = self._get_single_result('m_funeral')
+        cal_result = self._output_number(eval(m_one_off_num) + eval(m_funeral_num))
+        one_off_result = {
+            'm_one_off': m_one_off,
+            'm_funeral': m_funeral,
+            'total': {
+                'cal_result': cal_result,
+                'formula_result': '{}+{} = {}'.format(m_one_off_num, m_funeral_num, cal_result)
+            }
+        }
+
+        return one_off_result
+
+    def _get_monthly_result(self):
+        """
+        获取按月赔偿
+        :return:
+        """
+        m_spouse, m_spouse_num = self._get_single_result('m_spouse')
+        m_other, m_other_num = self._get_single_result('m_other')
+        cal_result = self._output_number(eval(m_spouse_num) + eval(m_other_num))
+        one_off_result = {
+            'm_spouse': m_spouse,
+            'm_other': m_other,
+            'total': {
+                'cal_result': cal_result,
+                'formula_result': '{}+{} = {}'.format(m_spouse_num, m_other_num, cal_result)
+            }
+        }
+
+        return one_off_result
